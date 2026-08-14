@@ -5,21 +5,21 @@
 class DocAgentAi < Formula
   desc "Multi-platform documentation workflow agent installer"
   homepage "https://github.com/zeshone/doc-agent-ai"
-  version "4.1.1"
+  version "5.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zeshone/doc-agent-ai/releases/download/v4.1.1/doc-agent-ai_4.1.1_darwin_amd64.tar.gz"
-      sha256 "be2dc1e4a862707864bef48646d2e6ca9263e5fbf8772e90a68b771f5fd65703"
+      url "https://github.com/zeshone/doc-agent-ai/releases/download/v5.0.0/doc-agent-ai_5.0.0_darwin_amd64.tar.gz"
+      sha256 "87d27e7926f4c68a77394176394f487c56a8f1890706eac4570c023c894b78b0"
 
       define_method(:install) do
         bin.install "doc-agent-ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zeshone/doc-agent-ai/releases/download/v4.1.1/doc-agent-ai_4.1.1_darwin_arm64.tar.gz"
-      sha256 "e287af6b749a3385d8c5898e8f1c9599d576c805eb4ab82a30545fb2becad737"
+      url "https://github.com/zeshone/doc-agent-ai/releases/download/v5.0.0/doc-agent-ai_5.0.0_darwin_arm64.tar.gz"
+      sha256 "fc14bc6085470ea4ddc5e804e1b1cad9789370e04eeed79aa7f148d471174ade"
 
       define_method(:install) do
         bin.install "doc-agent-ai"
@@ -29,15 +29,15 @@ class DocAgentAi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zeshone/doc-agent-ai/releases/download/v4.1.1/doc-agent-ai_4.1.1_linux_amd64.tar.gz"
-      sha256 "e859ad770a530b9f10783d00b215f163c5a66f672111908f71fb1514b24c8522"
+      url "https://github.com/zeshone/doc-agent-ai/releases/download/v5.0.0/doc-agent-ai_5.0.0_linux_amd64.tar.gz"
+      sha256 "91196e48a9e2f63ddcc3fa0e9ba1072edbbb807c07ad8a02fb1ae60ec52fb56f"
       define_method(:install) do
         bin.install "doc-agent-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zeshone/doc-agent-ai/releases/download/v4.1.1/doc-agent-ai_4.1.1_linux_arm64.tar.gz"
-      sha256 "ed6950a494a192ececedbcf738dcac99c994159e3ed3a19159aee79b4a2fd304"
+      url "https://github.com/zeshone/doc-agent-ai/releases/download/v5.0.0/doc-agent-ai_5.0.0_linux_arm64.tar.gz"
+      sha256 "2b8b87923773ed157224709d47655a6f480eebd92f2a894ce60e1eff5443006a"
       define_method(:install) do
         bin.install "doc-agent-ai"
       end
